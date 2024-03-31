@@ -1,3 +1,5 @@
+
+
 from keras_tools.metaimage import *
 import h5py
 import os
@@ -128,12 +130,3 @@ for loc in tqdm(locs, "Scans: "):
         f.create_dataset('data', data=np.array(data), compression="gzip", compression_opts=4)
         f.create_dataset('label', data=np.array(GT), compression="gzip", compression_opts=4)
         f.close()
-
-
-
-
-
-
-
-
-
